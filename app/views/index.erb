@@ -1,9 +1,29 @@
 <div class="container">
   <h1>Welcome to Sinatra!</h1>
   <p>Hello, world!</p>
-
+  
+  <label for='Get Cool'>Creep on some cool bros, dawg!</label>
+  <form action='/get_url' method='get'>
+  <br>
+    <input type='text' name='user_input'>
+    <input type='submit' name=''>
+    <br>
+    <br>
+  </form>
+    
+  <label for= 'Post Cool'>Add info to cool URL, bro!</label>
+  <form action='/cool_url' method='post'>
+    <br>
+    <label for= 'Post Cool'>name</label>
+    <input type='text' name='user_input' placeholder='First Name'>
+    <label for= 'Post Cool'></label>
+    <input type='text' name='user_input' placeholder='Last Name'>
+    <input type='submit' name='Submit'>
+  </form>
+  
   <table>
     <tr>
+      <br>
       <th>File Description</th>
       <th>File Location</th>
     </tr>
@@ -19,5 +39,8 @@
       <td>The current controller</td>
       <td><code><%= File.expand_path('../../controllers/index.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
     </tr>
-  </table>
+
+</table>
 </div>
+
+
